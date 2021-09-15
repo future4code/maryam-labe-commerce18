@@ -4,6 +4,11 @@ const CardContainer = styled.div`
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+
+  img {
+    width: 400px;
+    height: 300px;
+  }
 `;
 const CardInfo = styled.div`
   display: flex;

@@ -13,27 +13,33 @@ const AppContainer = styled.div`
 const products = [
   {
     id: 1,
-    name: "Produto 1",
+    name: "Produto: Sputnik",
     price: 100,
-    photo: "https://picsum.photos/200?a=1",
+    photo: "https://img.ibxk.com.br/2020/10/09/09001157614480.jpg?w=704",
   },
   {
     id: 2,
-    name: "Produto 2",
+    name: "Produto: Explorer 1",
     price: 200,
-    photo: "https://picsum.photos/200?a=2",
+    photo: "https://img.ibxk.com.br/2020/10/09/09001326865481.jpg?w=704",
   },
   {
     id: 3,
-    name: "Produto 3",
+    name: "Produto: Explorer 6",
     price: 300,
-    photo: "https://picsum.photos/200?a=3",
+    photo: "https://img.ibxk.com.br/2020/10/09/09001456809482.jpg?w=704",
   },
   {
     id: 4,
-    name: "Produto 4",
+    name: "Produto: TIROS-1",
     price: 400,
-    photo: "https://picsum.photos/200?a=4",
+    photo: "https://img.ibxk.com.br/2020/10/09/09001811346483.jpg?w=704",
+  },
+  {
+    id: 5,
+    name: "Produto: Vostok 1",
+    price: 500,
+    photo: "https://img.ibxk.com.br/2020/10/09/09002021259484.jpg?w=704",
   },
 ];
 
@@ -45,16 +51,16 @@ class App extends React.Component {
     productsInCart: [
       {
         id: 4,
-        name: "Produto 4",
+        name: "Produto: TIROS-1",
         price: 400,
-        photo: "https://picsum.photos/200?a=4",
+        photo: "https://img.ibxk.com.br/2020/10/09/09001811346483.jpg?w=704",
         quantity: 1,
       },
       {
         id: 3,
-        name: "Produto 3",
+        name: "Produto: Explorer 6",
         price: 300,
-        photo: "https://picsum.photos/200?a=3",
+        photo: "https://img.ibxk.com.br/2020/10/09/09001456809482.jpg?w=704",
         quantity: 3,
       },
     ],
