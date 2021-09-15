@@ -4,13 +4,16 @@ import styled from "styled-components";
 const FiltersContainer = styled.div`
   border: 1px solid black;
   padding: 8px;
-  margin-right: 345px;
+  margin-right: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const InputContainer = styled.label`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 20px;
 `;
 
