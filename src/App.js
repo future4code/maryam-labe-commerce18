@@ -1,6 +1,7 @@
 import React from "react";
-import { Filters } from "./components/Filters/Filters";
+import { Filters } from "./Components/Filters/Filters";
 import styled from "styled-components";
+import ShoppingCartItem from "./Components/ShoppingCart/ShoppingCartItem";
 
 const AppContainer = styled.div`
   display: grid;
@@ -127,6 +128,11 @@ class App extends React.Component {
           onChangeMinFilter={this.onChangeMinFilter}
           onChangeMaxFilter={this.onChangeMaxFilter}
           onChangeNameFilter={this.onChangeNameFilter}
+        />
+
+        <ShoppingCartItem
+          productsInCart={this.state.productsInCart}
+          onRemoveProductFromCart={this.onRemoveProductFromCart}
         />
       </AppContainer>
     );
