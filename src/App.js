@@ -3,6 +3,7 @@ import { Filters } from "./components/Filters/Filters";
 import { Products } from "./components/Products/Product";
 import { ShoppingCart } from "./components/ShoppingCart/ShoppingCart";
 import styled from "styled-components";
+import { Products } from "./components/Products/Products";
 
 const AppContainer = styled.div`
   display: grid;
@@ -144,10 +145,13 @@ class App extends React.Component {
           nameFilter={this.state.nameFilter}
           onAddProductToCart={this.onAddProductToCart}
         />
+ matheus-alonso
         <ShoppingCart
           productsInCart={this.state.productsInCart}
           onRemoveProductFromCart={this.onRemoveProductFromCart}
         />
+=======
+master
       </AppContainer>
     );
   }
