@@ -1,5 +1,7 @@
 import React from "react";
 import { Filters } from "./components/Filters/Filters";
+import { Products } from "./components/Products/Product";
+import { ShoppingCart } from "./components/ShoppingCart/ShoppingCart";
 import styled from "styled-components";
 import { Products } from "./components/Products/Products";
 
@@ -8,6 +10,7 @@ const AppContainer = styled.div`
   grid-template-columns: 1fr 3fr 1fr;
   padding: 16px;
   gap: 8px;
+  background-color: orange;
 `;
 
 const products = [
@@ -15,25 +18,31 @@ const products = [
     id: 1,
     name: "Produto 1",
     price: 100,
-    photo: "https://picsum.photos/200?a=1",
+    photo: "https://img.ibxk.com.br/2020/10/09/09001157614480.jpg?w=704",
   },
   {
     id: 2,
     name: "Produto 2",
     price: 200,
-    photo: "https://picsum.photos/200?a=2",
+    photo: "https://img.ibxk.com.br/2020/10/09/09001326865481.jpg?w=704",
   },
   {
     id: 3,
     name: "Produto 3",
     price: 300,
-    photo: "https://picsum.photos/200?a=3",
+    photo: "https://img.ibxk.com.br/2020/10/09/09001456809482.jpg?w=704",
   },
   {
     id: 4,
     name: "Produto 4",
     price: 400,
-    photo: "https://picsum.photos/200?a=4",
+    photo: "https://img.ibxk.com.br/2020/10/09/09001811346483.jpg?w=704",
+  },
+  {
+    id: 5,
+    name: "Produto 5",
+    price: 500,
+    photo: "https://img.ibxk.com.br/2020/10/09/09002021259484.jpg?w=704",
   },
 ];
 
@@ -47,14 +56,14 @@ class App extends React.Component {
         id: 4,
         name: "Produto 4",
         price: 400,
-        photo: "https://picsum.photos/200?a=4",
+        photo: "https://img.ibxk.com.br/2020/10/09/09001811346483.jpg?w=704",
         quantity: 1,
       },
       {
         id: 3,
         name: "Produto 3",
         price: 300,
-        photo: "https://picsum.photos/200?a=3",
+        photo: "https://img.ibxk.com.br/2020/10/09/09001456809482.jpg?w=704",
         quantity: 3,
       },
     ],
@@ -136,6 +145,13 @@ class App extends React.Component {
           nameFilter={this.state.nameFilter}
           onAddProductToCart={this.onAddProductToCart}
         />
+ matheus-alonso
+        <ShoppingCart
+          productsInCart={this.state.productsInCart}
+          onRemoveProductFromCart={this.onRemoveProductFromCart}
+        />
+=======
+master
       </AppContainer>
     );
   }
